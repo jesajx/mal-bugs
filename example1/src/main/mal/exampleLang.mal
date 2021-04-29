@@ -1,0 +1,19 @@
+#id: "org.mal-lang.joh-mal-bugs.example1"
+#version: "0.0.1"
+
+include "org.mal-lang.coreLang/coreLang.mal"
+
+category cat1 {
+    abstract asset ParentAsset {
+        | attemptAbuse -> abuse
+        & abuse
+    }
+    asset ChildAsset extends ParentAsset {
+        | attemptAbuse -> meh
+        | meh -> abuse
+        & abuse
+    }
+}
+
+associations {
+}

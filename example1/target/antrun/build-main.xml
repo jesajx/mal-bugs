@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <copy todir="/home/jesajx/prg/kthssas/mal/mal-bugs/example1/target/mal-root" overwrite="true">
+      <fileset dir="/home/jesajx/prg/kthssas/mal/mal-bugs/example1/src/main/mal" />
+    </copy>
+  </target>
+</project>
